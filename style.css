@@ -68,6 +68,14 @@ main {
     height: calc(100vh- 150px);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.playlist img {
+    height: 25px;
+    margin: 5px 5px 0 5px;
 }
 
 .user-info {
