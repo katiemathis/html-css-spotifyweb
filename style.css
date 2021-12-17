@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 header {
@@ -30,21 +31,66 @@ main {
 .sidebar {    
     min-width: 150px;
     background-color: black;
-    color: white;
 }
 
 .main-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     min-width: calc(100vw - 150px);
     background-color: purple;
+
 
 }
 
 .top-menu {
     position: absolute;
     top: 60px;
+    width: 100%;
+
 }
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+}
+
+.categories {
+    margin-top: 70px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.song-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.tile {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 5px;
+}
+
+.artist-round {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.caption {
+    margin: 5px;
+}
+
 
 
 footer {
