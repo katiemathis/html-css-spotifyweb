@@ -28,11 +28,6 @@ main {
 
 }
 
-.sidebar {    
-    min-width: 150px;
-    background-color: black;
-}
-
 .main-content {
     display: flex;
     flex-direction: column;
@@ -43,7 +38,34 @@ main {
 
 }
 
-.top-menu {
+.sidebar {  
+    display: flex; 
+    flex-direction: column; 
+    align-content: flex-start;
+    justify-content: left;
+    align-items: flex-start;
+    width: 150px;
+    background-color: black;
+    position: relative;
+}
+
+.playlist {
+    position: absolute;
+    top: 60px;
+    width: 150px;
+    height: calc(100vh- 150px);
+}
+
+.user-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 150px;
+    width: 150px;
+    background-color: turquoise;
+}
+
+.top-menu, {
     position: absolute;
     top: 60px;
     width: 100%;
