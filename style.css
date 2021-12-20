@@ -71,20 +71,32 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
 
 }
 
+.sidebar-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
 
-.playlist img {
+
+.playlist .sidebar-menu img {
     height: 25px;
     margin: 5px 5px 0 5px;
 }
+
+
 
 .user-info {
     position: absolute;
     bottom: 0;
     left: 0;
-    min-height: 150px;
+    min-height: 80px;
     width: 100%;
     background-color: turquoise;
 }
@@ -98,21 +110,23 @@ main {
 }
 
 .menu-items {
-    width: 60%;
+    width: 30%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     align-items: center;
 }
 
 .categories {
-    margin-top: 100px;
+    padding-top: 100px;
+
 }
 
 .thumbnails {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .song-card {
