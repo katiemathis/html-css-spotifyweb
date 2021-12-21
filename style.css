@@ -40,6 +40,8 @@ main {
     height: calc(100vh - 80px);
 }
 
+/* SIDEBAR */
+
 #sidebar {
     float: left;
     width: 150px;
@@ -48,16 +50,7 @@ main {
     background-color: black;
 }
 
-#main-content {
-    position: absolute;
-    float: left;
-    left: 150px;
-    top: 0;
-    width: calc(100vw - 150px);
-    height: 100%;
-    background-color: slategray;
-    overflow-y: scroll;
-}
+
 
 .playlist {
     position: absolute;
@@ -94,6 +87,19 @@ main {
     margin: 5px 5px 0 5px;
 }
 
+/* MAIN CONTENT */
+
+#main-content {
+    position: absolute;
+    float: left;
+    left: 150px;
+    top: 0;
+    width: calc(100vw - 150px);
+    height: 100%;
+    background-color: #141923;
+    overflow-y: scroll;
+}
+
 
 .top-menu {
     position: absolute;
@@ -111,7 +117,31 @@ main {
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
+
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+}
+
+.menu-items li a.active::after {
+    content: "";
+    height: 2px;
+    width: 40px;
+    background-color: #94dd25;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transform: translateX(50%);
+
+}
+
 
 
 .categories {
@@ -261,7 +291,5 @@ i, .playback-bar, .volume {
         display: none;
     }
 
-    footer {
-        scale:inherit;
-    }
+
 }
