@@ -6,6 +6,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
+/* MAIN */
+
+main {
+    position: relative;
+    height: calc(100vh - 80px);
+}
+
 /* HEADER */
 
 header {
@@ -14,21 +22,13 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     z-index: 999;
 }
 
-#logo {
-    height: 40px;
-}
-
-#logo-small {
-    display: none;
-}
-
 .call-to-action {
+    align-self: center;
+    transform: translate(-90%);
     margin: 5px 20px;
     padding: 5px 20px;
     text-decoration: none;
@@ -38,19 +38,10 @@ header {
     font-size: 12px;
 }
 
-
-
 .call-to-action:hover {
-    transform: scale(1.2);
-}
-
-
-
-/* MAIN */
-
-main {
-    position: relative;
-    height: calc(100vh - 80px);
+    transform: translate(-60%);
+    border-radius: 22px;
+    font-size: 18px;
 }
 
 /* SIDEBAR */
@@ -59,35 +50,50 @@ main {
     float: left;
     width: 150px;
     height: 100%;
-    overflow-y: scroll;
     background-color: black;
     font-size: 14px;
-    overflow-y: scroll;
 }
 
 
 
-#playlist {
-    position: absolute;
-    top: 60px;
+#sidebar-top {
     width: 150px;
     height: calc(100vh- 150px);
     overflow: hidden;
-    opacity: 0.6;
-
 }
 
-.sidebar-menu li a:hover {
+#logo {
+    height: 40px;
+    opacity: 1;
+}
+
+#logo-small {
+    display: none;
+}
+
+.sidebar-menu li {
+    opacity: 0.6;
+}
+
+.sidebar-menu li h4 {
     opacity: 0.9;
 }
 
-#playlist #lists {
+#lists li a {
+    opacity: 0.6;
+}
+
+.sidebar-menu li:hover, #lists li a:hover, .sidebar-menu li h4:hover {
+    opacity: 0.9;
+}
+
+#sidebar #lists {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
 }
 
-#playlist #lists li {
+#sidebar #lists li {
     margin: 5px;
 }
 
@@ -105,12 +111,11 @@ main {
     justify-content: flex-start;
     align-items: flex-end;
     flex-wrap: wrap;
-    overflow-y: scroll;
     margin-bottom: 5px;
 }
 
 
-#playlist .sidebar-menu img  {
+#sidebar-top .sidebar-menu .sidebar-menu-item img  {
     height: 25px;
     margin: 5px 5px 0 5px;
 }
@@ -191,24 +196,21 @@ ul {
 }
 
 .song-card {
+    width: calc(100% / 6);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
+    padding: 5px;
 }
 
-.tile img {
-    height: 100px;
-    width: 100px;
-    background-color: white;
+.tile img, .artist-round img {
+    width: 100%;
     margin: 5px;
 }
 
-.artist-round img {
-    height: 100px;
-    width: 100px;
-    background-color: white;
+.artist-round img {   
     border-radius: 50%;
     margin: 5px;
 }
@@ -288,12 +290,30 @@ i, .playback-bar, .volume {
     margin: 5px;
 }
 
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+    .song-card {
+        width: calc(100% / 5)
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+    .song-card {
+        width: calc(100% / 4)
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 700px) {
+    .song-card {
+        width: calc(100% / 3)
+    }
+}
+
 @media screen and (max-width: 600px) {
     #sidebar {
         width: 50px;
     }
 
-    .playlist {
+    #sidebar-top {
         display: none;
     }
 
@@ -308,6 +328,10 @@ i, .playback-bar, .volume {
 
     .top-menu {
         display: none;
+    }
+
+    .song-card {
+        width: calc(100% / 2)
     }
 
     #logo-small {
