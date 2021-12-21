@@ -225,7 +225,7 @@ main::after {
     display: table;
 }
 
-
+/* FOOTER */
 
 footer {
     position: fixed;
@@ -289,6 +289,8 @@ footer {
 i, .playback-bar, .volume {
     margin: 5px;
 }
+
+/* MEDIA QUERIES */
 
 @media screen and (min-width: 901px) and (max-width: 1000px) {
     .song-card {
