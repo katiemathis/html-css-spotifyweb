@@ -67,9 +67,20 @@ header {
     opacity: 1;
 }
 
-#logo-small {
+.logo-mobile, .icons-mobile {
     display: none;
 }
+
+.logo-mobile {
+    width: 40px;
+}
+
+.icons-mobile {
+    width: 30px;
+    opacity: 0.6;
+}
+
+
 
 .sidebar-menu li {
     opacity: 0.6;
@@ -83,7 +94,7 @@ header {
     opacity: 0.6;
 }
 
-.sidebar-menu li:hover, #lists li a:hover, .sidebar-menu li h4:hover {
+.sidebar-menu li:hover, #lists li a:hover, .sidebar-menu li h4:hover, .icons-mobile a:hover {
     opacity: 0.9;
 }
 
@@ -336,8 +347,9 @@ i, .playback-bar, .volume {
         width: calc(100% / 2)
     }
 
-    #logo-small {
+    .logo-mobile, .icons-mobile {
         display: block;
+        z-index: 999;
     }
 
     #logo {
