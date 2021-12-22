@@ -30,15 +30,15 @@
             </div>
             <div id="sidebar-top">
 
-                <ul class="sidebar-menu">
-                    <li><a href="#"><span class="sidebar-menu-item"><img src="img/home.svg" alt="Home">Home</span></a></li>
-                    <li><a href="#"><span class="sidebar-menu-item"><img src="img/search.svg" alt="Search">Search</span></a></li>
-                    <li><a href="#"><span class="sidebar-menu-item"><img src="img/libreria.svg" alt="Libreria">La tua libreria</span></a></li>
-                </ul>
-                <ul class="sidebar-menu">
-                    <li><h4>PLAYLIST</h4></li>
-                    <li><a href="#"><span class="sidebar-menu-item"><img src="img/home.svg" alt="Crea">Crea Playlist</span></li></a>
-                </ul>
+                <div class="sidebar-menu">
+                    <a href="#"><span class="sidebar-menu-item"><img src="img/home.svg" alt="Home">Home</span></a>
+                    <a href="#"><span class="sidebar-menu-item"><img src="img/search.svg" alt="Search">Search</span></a>
+                    <a href="#"><span class="sidebar-menu-item"><img src="img/libreria.svg" alt="Libreria">La tua libreria</span></a>
+                </div>
+                <h4>PLAYLIST</h4>
+                <div class="sidebar-menu">
+                    <a href="#" id="playlist-plus"><p id="plus">+</p><p id="crea">Crea Playlist</p></a>
+                </div>
                 <ul id="lists">
                     <li><a href="#">Nome Playlist</li></a> 
                     <li><a href="#">Nome Playlist</li></a> 
@@ -106,7 +106,9 @@
                     <div class="song-card">
                         <div class="tile">
                             <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-
+                            <div class="tile-overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h4 class="caption">Heavy Metal</h4>
                         <p class="subtitle">Subtitle</p>
@@ -115,7 +117,9 @@
                     <div class="song-card">
                         <div class="tile">
                             <img src="img/stranger.jpeg" alt="Stranger Things">
-
+                            <div class="tile-overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h4 class="caption">Heavy Metal</h4>
                         <p class="subtitle">Subtitle</p>
@@ -124,7 +128,9 @@
                     <div class="song-card">
                         <div class="tile">
                             <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-
+                            <div class="tile-overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h4 class="caption">Heavy Metal</h4>
                         <p class="subtitle">Subtitle</p>
@@ -132,7 +138,9 @@
                     <div class="song-card">
                         <div class="tile">
                             <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-
+                            <div class="tile-overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h4 class="caption">Heavy Metal</h4>
                         <p class="subtitle">Subtitle</p>
@@ -145,7 +153,9 @@
                     <div class="song-card">
                         <div class="tile">
                             <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-
+                            <div class="tile-overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h4 class="caption">Heavy Metal</h4>
                         <p class="subtitle">Subtitle</p>
@@ -153,7 +163,9 @@
                     <div class="song-card">
                         <div class="tile">
                             <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-
+                            <div class="tile-overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h4 class="caption">Heavy Metal</h4>
                         <p class="subtitle">Subtitle</p>
@@ -162,7 +174,9 @@
                     <div class="song-card">
                         <div class="tile">
                             <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-
+                            <div class="tile-overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h4 class="caption">Heavy Metal</h4>
                         <p class="subtitle">Subtitle</p>
@@ -171,7 +185,9 @@
                     <div class="song-card">
                         <div class="tile">
                             <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-
+                            <div class="tile-overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h4 class="caption">Heavy Metal</h4>
                         <p class="subtitle">Subtitle</p>
@@ -180,7 +196,9 @@
                     <div class="song-card">
                         <div class="tile">
                             <img src="img/metal_lifting.jpg" alt="Heavy Metal">
-
+                            <div class="tile-overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h4 class="caption">Heavy Metal</h4>
                         <p class="subtitle">Subtitle</p>
@@ -195,6 +213,9 @@
                     <div class="song-card">
                         <div class="artist-round">
                             <img src="img/stranger.jpeg" alt="Stranger">
+                            <div class="tile-overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <p class="caption">blah</p>
 
@@ -203,6 +224,9 @@
                     <div class="song-card">
                         <div class="artist-round">
                             <img src="img/stranger.jpeg" alt="Stranger">
+                            <div class="tile-overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
 
                         </div>
                         <p class="caption">blah</p>
@@ -212,6 +236,9 @@
                     <div class="song-card">
                         <div class="artist-round">
                             <img src="img/stranger.jpeg" alt="Stranger">
+                            <div class="tile-overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <p class="caption">blah</p>
 
@@ -220,6 +247,9 @@
                     <div class="song-card">
                         <div class="artist-round">
                             <img src="img/stranger.jpeg" alt="Stranger">
+                            <div class="tile-overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <p class="caption">blah</p>
 

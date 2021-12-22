@@ -82,29 +82,56 @@ header {
 
 
 
-.sidebar-menu li {
+.sidebar-menu a {
     opacity: 0.6;
+    margin: 2.5px;
+    font-size: 12px;
+    line-height: 14px;
 }
 
-.sidebar-menu li h4 {
-    opacity: 0.9;
+#sidebar-top h4 {
+    margin-left: 2px;
 }
 
 #lists li a {
+    font-size: 12px;
+    margin-top: 10px; 
     opacity: 0.6;
 }
 
-.sidebar-menu li:hover, #lists li a:hover, .sidebar-menu li h4:hover, .icons-mobile a:hover {
+.sidebar-menu a:hover, #lists li a:hover, .sidebar-menu a h4:hover, .icons-mobile a:hover {
     opacity: 0.9;
 }
 
-#sidebar #lists {
+#sidebar-top #lists {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
 }
 
-#sidebar #lists li {
+#sidebar-top #lists li {
+    margin: 5px;
+    overflow: auto;
+}
+
+#playlist-plus {
+    line-height: 30px;
+}
+
+#plus {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    float: left;
+    padding: 0 8px;
+    margin: 5px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#crea {
+    float: left;
+    vertical-align: middle;
     margin: 5px;
 }
 
@@ -252,19 +279,55 @@ ul {
     padding: 5px;
 }
 
-.tile img, .artist-round img {
+.tile, .artist-round {
+    position: relative;
+}
+
+.tile img, .tile .tile-overlay, .artist-round img {
     width: 100%;
-    margin: 5px;
+    margin: 10px 10px 10px 0;
 }
 
 .artist-round img {   
     border-radius: 50%;
-    margin: 5px;
+    margin: 10px 10px 10px 0;
 }
 
 .caption {
     margin: 5px;
 }
+
+.tile-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tile-overlay i {
+    font-size: 50px;
+    color: white;
+}
+
+.tile:hover .tile-overlay {
+    display: flex;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.artist-round:hover .tile-overlay {
+    display: flex;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
 
 main::after {
     content: "";
