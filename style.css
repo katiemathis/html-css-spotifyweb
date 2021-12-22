@@ -401,7 +401,7 @@ footer {
 
 .volume {
     height: 3px;
-    width: 60%;
+    width: 50%;
     margin-right: 10px;
     border-radius: 5px;
     background-color: white;
@@ -465,6 +465,15 @@ i, .playback-bar, .volume {
 
     #logo {
         display: none;
+    }
+
+
+    #list-icon, #desktop-icon {
+        display: none;
+    }
+
+    .volume {
+        width: 80%;
     }
 }
 
