@@ -58,8 +58,10 @@ header {
 
 #sidebar-top {
     width: 150px;
-    height: calc(100vh- 150px);
+    height: calc(100vh - 180px);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 #logo {
