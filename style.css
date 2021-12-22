@@ -111,7 +111,6 @@ header {
 
 #sidebar-top #lists li {
     margin: 5px;
-    overflow: auto;
 }
 
 #playlist-plus {
@@ -352,14 +351,19 @@ footer {
 .left-footer-items, .right-footer-items {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    width: 20vw;
 }
 
 .small-thumbnail {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    margin: 5px;
+    width: 5vw;
+    height: 5vw;
+    margin: 10px;
+}
+
+.small-thumbnail img {
+    width: 100%;
+    height: 100%;
 }
 
 .small-caption {
@@ -372,25 +376,31 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 50vw;
 }
 
 .horizontal-menu, .song-time {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .playback-bar {
-    height: 5px;
-    width: 300px;
+    height: 3px;
+    width: 100%;
     border-radius: 5px;
     background-color: white;
     align-self: center;
 }
 
+.song-time {
+    font-size: 12px;
+}
+
 .volume {
-    height: 5px;
-    width: 100px;
+    height: 3px;
+    width: 60%;
+    margin-right: 10px;
     border-radius: 5px;
     background-color: white;
     align-self: center;
