@@ -92,8 +92,6 @@ header {
 
 }
 
-
-
 .sidebar-menu a {
     opacity: 0.6;
     margin: 2.5px;
@@ -239,7 +237,6 @@ hr {
     width: 100%;
     float: top;
     font-size: 12px;
-    opacity: 0.6;
 }
 
 .menu-items {
@@ -263,7 +260,11 @@ ul {
     position: relative;
 }
 
-.menu-items li a:hover a {
+.menu-items li a {
+    color: grey;
+}
+
+.menu-items li a:hover {
     color: white;
     opacity: 1;
 }
@@ -340,7 +341,7 @@ ul {
     margin: 10px 10px 10px 0;
 }
 
-.caption {
+.caption, .subtitle {
     margin: 5px;
     text-align: center;
 }
