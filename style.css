@@ -279,6 +279,24 @@ ul {
     align-items: center;
     padding: 5px;
 }
+.song-card > * {
+    flex: 1;
+  }
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.text p {
+    color: grey;
+    font-size: 12px;
+    align-self: center;
+}
 
 .tile, .artist-round {
     position: relative;
